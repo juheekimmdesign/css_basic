@@ -1,0 +1,21 @@
+body {}
+#phone {}
+#phone #call {
+    width: 1100px; margin: 50px auto 0; 
+    background-color: #eee;
+}
+#phone #call th,
+#phone #call td {padding:20px 0;}
+#phone #call thead {
+    border:2px solid #000;
+    border-left: 0; border-right: 0;
+}
+#phone #call thead tr {}
+#phone #call thead tr:nth-child(1) {border-bottom: 1px dashed #888;}
+#phone #call thead tr th {}
+#phone #call thead tr th img {width: 32px;}
+#phone #call thead tr th span {font-size: 0.75rem; color:#888; display: block;}
+#phone #call tbody {}
+#phone #call tbody tr {border-bottom: 1px solid #666;}
+#phone #call tbody tr th {}
+#phone #call tbody tr td {width: 200px; text-align: center;}
