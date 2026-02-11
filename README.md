@@ -116,7 +116,7 @@
 * `display:inline-block` : 인라인을 수직으로 나열
     * 기본 여백 3px 발생 -> 해결볍 `margin-right:3px`
 ### margin
-    `margin:상하여백 auto` : 크기가 설정된 블록 또는 인라인을 화면 가운데 배치
+* `margin:상하여백 auto` : 크기가 설정된 블록 또는 인라인을 화면 가운데 배치
 ### float
 * `float:left` : 형제요소들을 왼쪽으로 순차정렬
 * `float:right` : 형제요소들을 오른쪽으로 순차정렬
