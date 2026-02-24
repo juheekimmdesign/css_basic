@@ -183,6 +183,16 @@
     * `center` : 메인축이 수직이면 수직중앙, 수평이면 수평중앙
 ### 교차축 정렬 속성
 * `align-items` 교차축이 1줄일때
-    * `flex-star, flex-end, center` : 위 메인축과 뜻 동일
+    * `flex-start, flex-end, center` : 위 메인축과 뜻 동일
 * `align-content` 교차축이 2줄 이상일때
-    * `flex-star, flex-end, center, space-between, space-around` : 위 메인축과 뜻 동일, 값 동일
+    * `flex-start, flex-end, center, space-between, space-around` : 위 메인축과 뜻 동일, 값 동일
+### 스크롤 디자인
+/* Firefox */
+html {scrollbar-width: 10px; scrollbar-color: #222 #e73b3b;}
+/* Opera */
+html::-o-scrollbar {width: 10px;}
+html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}
+/* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}
+::-webkit-scrollbar-thumb {background-color: #222;border-radius: 5px;}

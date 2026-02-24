@@ -1,0 +1,46 @@
+header {
+    background-color: aqua;
+    width: 320px; height: 150px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+header > * {
+    border: 1px solid red;
+    width: 50px; height: 50px;
+}
+header h1 {}
+header nav {}
+header nav .gnb {
+    display: flex; flex-flow: row wrap;
+}
+header nav .gnb > li {
+    background-color: bisque;
+    width: 50%;
+}
+header nav .gnb > li:nth-child(3) {
+    background-color: yellowgreen; font-size: 0.66rem;
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+}
+header nav .gnb > li:nth-child(3) > a {}
+header nav .gnb > li:nth-child(3) > span {}
+header nav .gnb > li:nth-child(3) > em {}
+header nav .gnb > li:first-child {}
+header nav .gnb > li:first-child .sub_bg {
+    background-color: lime;
+    position: absolute;
+    width: 1000%; height: 150px; top: 66px;
+    left: 50%; transform:translateX(-50%);
+    /* display: flex; flex-flow: column nowrap; align-items: center; */
+    text-align: center;/* inline-block의 inline특징을 파악해서 가운데로 배치 */
+}
+header nav .gnb > li:first-child .sub_bg ul {
+    background-color: antiquewhite;
+    width: 200px;
+    display: inline-block;
+}
+header nav .gnb > li:first-child .sub_bg ul li {}
+header nav .gnb > li:first-child .sub_bg ul li a {}
+main {height: 200vh; background-color: lightblue;}
