@@ -50,7 +50,19 @@
         main #visual #deco .obj9 {
             right:0; top:440px;
         }
-
+        /* 회전 애니메이션 */
+        /* 정방향 회전 */
+        main #visual #deco .obj1 {animation: rotate 10s linear alternate infinite;}
+        main #visual #deco .obj3,
+        main #visual #deco .obj6 {animation: rotate 3s linear alternate infinite;}
+        /* 역방향 회전 */
+        main #visual #deco .obj5,
+        main #visual #deco .obj8 {animation: rotate 3s linear alternate-reverse infinite;}
+        /* 크기 애니메이션  */
+        main #visual #deco .obj2,
+        main #visual #deco .obj4,
+        main #visual #deco .obj7,
+        main #visual #deco .obj9 {animation: scale 1s alternate infinite;}
         main #book_center {
             position:absolute; 
             left:50%; bottom:-50px; margin-left:-181px;
@@ -69,7 +81,15 @@
         main .category a.active {background:#26bad7; color:#fff;}
 
         /* 애니메이션 */
-
+        /* keyframes은 키프레임이름을 아래처럼 단순하게 적으면 좋음 */
+        @keyframes rotate {
+            from {transform: rotate(-5deg);}
+            to{transform: rotate(5deg);}
+        }
+        @keyframes scale {
+            0% {transform: scale(1);}
+            100% {transform: scale(1.2);}
+        }
     </style>
 </head>
 <body>
