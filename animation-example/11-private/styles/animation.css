@@ -1,0 +1,19 @@
+@keyframes rotate360 {
+    from {rotate: 0;}
+    to {rotate: 360deg;}
+}
+@keyframes x1000{
+    from {transform: translateX(1000px); opacity: 0;}
+    to {transform: translateX(0) opacity: 1;}
+}
+@keyframes bg_pst {
+    0% {background-position-x: 0;}
+    100% {background-position-x: 1000px;}
+    /* position:; 요소 움직임 */
+    /* background-position:; x y; */
+    /* background-position-x: x; */
+}
+@keyframes up_down {/* mouse_hint, scroll_hint 이름으로 정해줘도 좋음! */
+    0% {transform: translateY(5px);}
+    100% {transform: translateY(-5px);}
+}
